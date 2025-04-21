@@ -25,7 +25,7 @@ export class PlayersService {
 
   async create(username: string) {
     const result = await this.db.query(
-      'INSERT INTO players (username) VALUES (?)',  // Changé de 'users' à 'players'
+      'INSERT INTO players (username) VALUES (?)',
       [username]
     );
     
