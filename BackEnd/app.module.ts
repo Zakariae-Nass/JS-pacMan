@@ -9,6 +9,6 @@ import { GamesModule } from './games/game.module';
         GamesModule
     ],
     providers: [DatabaseService],
-    exports: [DatabaseService], // Export the DatabaseService if needed in other modules
+    exports: [DatabaseService], 
 })
 export class AppModule {}
