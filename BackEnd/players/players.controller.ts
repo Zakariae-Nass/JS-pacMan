@@ -8,7 +8,7 @@ interface CreatePlayerDto {
 export class PlayersController {
   constructor(private readonly playersService: PlayersService) {}
 
- // Modifier pour chercher par username au lieu de id
+ 
  @Get(':username')
  async findOne(@Param('username') username: string) {
    const player = await this.playersService.findByUsername(username);
