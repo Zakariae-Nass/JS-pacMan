@@ -7,7 +7,7 @@ import { CreateGameDto } from './create-game.dto';
 export class GamesController {
   constructor(private readonly gamesService: GamesService) {}
 
- // Modifier pour chercher par username au lieu de id
+
  @Get(':playerid')
 
   async findLast(@Param('playerid') playerid: string) {
